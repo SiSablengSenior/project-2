@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e6" />
+    <title>SubsidiTepat Ops</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{--paper:#f4f0e6;--ink:#171717;--lime:#c7f36b;--pink:#ff8fbd;--blue:#8fdcff;--yellow:#ffd45c;--line:3px solid var(--ink);--shadow:6px 6px 0 var(--ink)}
+      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:14px}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit}.app-shell{min-height:100vh;display:grid;grid-template-columns:255px minmax(0,1fr);max-width:1600px;margin:auto}.sidebar{background:var(--lime);border-right:var(--line);padding:28px 20px;display:flex;flex-direction:column;gap:40px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:52px;height:52px;display:grid;place-items:center;background:var(--pink);border:var(--line);box-shadow:3px 3px 0 var(--ink);font-weight:900;font-size:19px;transform:rotate(-3deg)}.brand strong,.brand span{display:block}.brand strong{font-size:18px;font-weight:900;letter-spacing:-.8px}.brand span{font:11px 'DM Mono',monospace;text-transform:uppercase;margin-top:3px}.nav-list{display:grid;gap:12px}.nav-item{display:flex;align-items:center;gap:10px;text-decoration:none;border:2px solid transparent;padding:13px 12px;font-weight:800}.nav-item.active,.nav-item:hover{background:var(--paper);border:var(--line);box-shadow:3px 3px 0 var(--ink);transform:translate(-1px,-1px)}.nav-icon{font:900 20px 'DM Mono',monospace;width:22px}.sidebar-bottom{margin-top:auto}.connection-card{display:flex;align-items:center;gap:10px;background:#fff;border:var(--line);padding:12px;box-shadow:var(--shadow)}.connection-card small,.connection-card strong{display:block}.connection-card small{font:10px 'DM Mono',monospace;text-transform:uppercase}.connection-card strong{font-size:13px}.status-dot{width:10px;height:10px;border-radius:50%;background:#f04444;border:2px solid var(--ink);flex-shrink:0}.icon-button{margin-left:auto;border:2px solid var(--ink);background:var(--yellow);width:32px;height:32px;font-size:20px;font-weight:900;cursor:pointer}.docs-link{display:flex;justify-content:space-between;margin-top:18px;font-size:11px;font-weight:800;text-decoration-thickness:2px}.main-content{padding:32px clamp(18px,4vw,56px);min-width:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:26px}.eyebrow,.section-kicker,.session-label{font:700 10px 'DM Mono',monospace;letter-spacing:1px}.eyebrow{margin:0 0 9px}.topbar h1{font-size:clamp(27px,3.2vw,43px);line-height:1.02;letter-spacing:-2px;margin:0;font-weight:900;max-width:650px}.operator-chip{display:flex;align-items:center;gap:10px;border:var(--line);background:#fff;padding:8px 12px;font-weight:800;white-space:nowrap;box-shadow:3px 3px 0 var(--ink)}.avatar{display:grid;place-items:center;width:32px;height:32px;background:var(--blue);border:2px solid var(--ink);font-size:11px;font-weight:900}.chevron{font-size:19px}.notice{display:flex;align-items:flex-start;gap:12px;padding:15px 16px;background:var(--yellow);border:var(--line);box-shadow:var(--shadow);margin-bottom:30px}.notice-icon{display:grid;place-items:center;flex-shrink:0;width:25px;height:25px;background:#fff;border:2px solid var(--ink);font-weight:900}.notice p{margin:2px 0 0;line-height:1.55;font-size:12px}.notice-close{margin-left:auto;border:0;background:transparent;font-size:23px;font-weight:900;cursor:pointer;line-height:1}.workspace-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);gap:22px;align-items:start}.panel{background:#fff;border:var(--line);box-shadow:var(--shadow);padding:24px;min-width:0}.section-heading,.activity-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-kicker{display:block;color:#555;margin-bottom:8px}.section-heading h2,.activity-title h2{font-size:25px;line-height:1.05;letter-spacing:-1px;margin:0;font-weight:900}.live-pill{background:var(--lime);border:2px solid var(--ink);padding:7px 9px;font-size:10px;font-weight:900;white-space:nowrap}.live-pill span{display:inline-block;width:7px;height:7px;background:#237b35;border:1px solid var(--ink);border-radius:50%;margin-right:5px}.muted{font-size:12px;line-height:1.6;color:#555;margin:14px 0 22px}.plate-form label{display:block;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;margin-bottom:9px}.plate-input-wrap{display:flex;align-items:stretch;gap:0;border:var(--line);background:#fff;min-width:0}.plate-prefix{display:grid;place-items:center;background:var(--blue);border-right:var(--line);padding:0 13px;font:700 12px 'DM Mono',monospace}.plate-input-wrap input{min-width:0;width:100%;border:0;outline:0;padding:14px 12px;font-weight:800;text-transform:uppercase}.plate-input-wrap input:focus{box-shadow:inset 0 0 0 3px var(--blue)}.primary-button{border:0;border-left:var(--line);background:var(--lime);padding:0 14px;display:flex;gap:12px;align-items:center;justify-content:center;font-size:12px;font-weight:900;cursor:pointer;white-space:nowrap}.primary-button:hover{background:var(--pink)}.button-arrow{font-size:20px}.result-card{display:flex;gap:12px;align-items:center;background:#f4f0e6;border:2px dashed #777;padding:14px;margin-top:20px}.result-symbol{display:grid;place-items:center;width:42px;height:42px;background:var(--yellow);border:2px solid var(--ink);font-size:23px;font-weight:900;flex-shrink:0}.result-card strong{font-size:13px}.result-card p{margin:4px 0 0;color:#666;font-size:11px;line-height:1.5}.recent-heading{display:flex;justify-content:space-between;align-items:center;margin-top:25px;padding-top:18px;border-top:2px solid var(--ink);font-size:12px;font-weight:900}.text-button{border:0;background:transparent;text-decoration:underline;text-decoration-thickness:2px;font-size:11px;font-weight:900;cursor:pointer}.recent-list{display:grid;gap:8px;margin-top:10px}.recent-item{display:flex;justify-content:space-between;gap:10px;padding:10px;background:#fff;border:2px solid var(--ink);font:11px 'DM Mono',monospace}.action-count{display:grid;place-items:center;background:var(--pink);border:2px solid var(--ink);width:32px;height:32px;font-weight:900;box-shadow:2px 2px 0 var(--ink)}.action-list{display:grid;gap:10px}.action-item{width:100%;display:grid;grid-template-columns:40px minmax(0,1fr) 20px;gap:11px;align-items:center;text-align:left;padding:11px;border:2px solid var(--ink);background:#fff;cursor:pointer;transition:transform .12s,box-shadow .12s}.action-item:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--ink)}.action-icon{display:grid;place-items:center;width:38px;height:38px;border:2px solid var(--ink);font-size:20px;font-weight:900}.action-item[data-tone="green"] .action-icon{background:var(--lime)}.action-item[data-tone="amber"] .action-icon{background:var(--yellow)}.action-item[data-tone="red"] .action-icon{background:var(--pink)}.action-item strong,.action-item small{display:block}.action-item strong{font-size:12px;font-weight:900}.action-item small{font-size:10px;color:#666;margin-top:4px}.row-arrow{font-size:20px;font-weight:900}.activity-section{margin-top:38px}.activity-title{margin-bottom:17px}.session-label{background:var(--blue);border:2px solid var(--ink);padding:8px}.activity-table{border:var(--line);background:#fff;box-shadow:var(--shadow)}.table-head{display:grid;grid-template-columns:100px minmax(150px,1.4fr) minmax(90px,1fr) 90px;gap:12px;padding:13px 16px;background:var(--ink);color:#fff;font:10px 'DM Mono',monospace;letter-spacing:.5px}.activity-row{display:grid;grid-template-columns:100px minmax(150px,1.4fr) minmax(90px,1fr) 90px;gap:12px;padding:13px 16px;border-top:2px solid var(--ink);font-size:11px;align-items:center;overflow-wrap:anywhere}.activity-empty{padding:20px;color:#666;font-size:12px}.status-tag{display:inline-block;padding:5px 7px;background:var(--lime);border:1px solid var(--ink);font-size:10px;font-weight:900}footer{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:14px;border-top:2px solid var(--ink);font:10px 'DM Mono',monospace;color:#555}.toast{position:fixed;right:20px;bottom:20px;max-width:min(380px,calc(100vw - 40px));background:var(--ink);color:#fff;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--pink);padding:14px 18px;font-size:12px;font-weight:800;display:none;z-index:5}.toast.show{display:block}.notice.hidden{display:none}
+      @media(max-width:1050px){.app-shell{grid-template-columns:210px minmax(0,1fr)}.sidebar{padding:22px 14px}.workspace-grid{grid-template-columns:1fr}.actions-panel{order:2}.table-head,.activity-row{grid-template-columns:85px minmax(130px,1.3fr) minmax(70px,1fr) 75px}.panel{padding:20px}}
+      @media(max-width:680px){.app-shell{display:block}.sidebar{border-right:0;border-bottom:var(--line);padding:14px 16px;gap:14px}.brand-mark{width:42px;height:42px}.nav-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.nav-item{padding:9px 6px;justify-content:center;text-align:center;font-size:10px;gap:4px;flex-direction:column}.nav-icon{font-size:16px}.sidebar-bottom{display:none}.main-content{padding:23px 15px}.topbar{align-items:flex-start}.topbar h1{font-size:29px;letter-spacing:-1.4px}.operator-chip{font-size:0;padding:6px}.operator-chip .avatar{font-size:10px}.operator-chip .chevron{font-size:16px}.notice{padding:12px;box-shadow:3px 3px 0 var(--ink)}.notice p{font-size:11px}.panel{padding:17px;box-shadow:4px 4px 0 var(--ink)}.section-heading h2,.activity-title h2{font-size:23px}.live-pill{font-size:9px;padding:6px}.plate-input-wrap{flex-wrap:wrap}.plate-prefix{padding:0 11px}.plate-input-wrap input{width:calc(100% - 48px);min-height:48px}.primary-button{width:100%;border-left:0;border-top:var(--line);min-height:44px}.activity-section{margin-top:31px}.activity-table{overflow-x:auto}.table-head,.activity-row{min-width:510px;grid-template-columns:80px 1.4fr 1fr 75px}.table-head{padding:11px}.activity-row{padding:11px}footer{flex-direction:column;line-height:1.5}}
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">OPS</div>
+          <div>
+            <strong>SiSablengSenior</strong>
+            <span>Console</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Navigasi utama">
+          <a class="nav-item active" href="#verification"><span class="nav-icon">/</span> Verifikasi nopol</a>
+          <a class="nav-item" href="#actions"><span class="nav-icon">+</span> Tindakan akun</a>
+          <a class="nav-item" href="#activity"><span class="nav-icon">~</span> Aktivitas</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="connection-card">
+            <span class="status-dot offline"></span>
+            <div>
+              <small>Koneksi API</small>
+              <strong>Mode demo</strong>
+            </div>
+            <button class="icon-button" id="refreshConnection" aria-label="Cek koneksi API" title="Cek koneksi API">↻</button>
+          </div>
+          <a class="docs-link" href="https://docs-api.mypertamina.id/" target="_blank" rel="noreferrer">Buka dokumentasi API <span>↗</span></a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">CONTROL ROOM / <span id="todayLabel">14 OKT 2026</span></p>
+            <h1>Kelola data kendaraan</h1>
+          </div>
+          <div class="operator-chip"><span class="avatar">OPS</span><span>SiSablengSenior</span><span class="chevron">⌄</span></div>
+        </header>
+
+        <div class="notice" role="status">
+          <span class="notice-icon">i</span>
+          <p><strong>Mode demo aktif.</strong> UI ini belum mengirim perubahan ke sistem MyPertamina. Hubungkan backend resmi dengan autentikasi yang sah sebelum dipakai operasional.</p>
+          <button class="notice-close" aria-label="Tutup pemberitahuan">×</button>
+        </div>
+
+        <section class="workspace-grid" id="verification">
+          <div class="verification-panel panel">
+            <div class="section-heading">
+              <div><span class="section-kicker">01 / CEK STATUS</span><h2>Verifikasi nopol</h2></div>
+              <span class="live-pill"><span></span> Respon cepat</span>
+            </div>
+            <p class="muted">Masukkan nomor polisi untuk memeriksa status pendaftaran kendaraan.</p>
+            <form class="plate-form" id="plateForm">
+              <label for="plateInput">Nomor polisi</label>
+              <div class="plate-input-wrap">
+                <span class="plate-prefix">ID</span>
+                <input id="plateInput" name="plate" type="text" autocomplete="off" placeholder="B 1234 ABC" maxlength="12" required />
+                <button class="primary-button" type="submit"><span>Verifikasi</span><span class="button-arrow">→</span></button>
+              </div>
+            </form>
+            <div class="result-card empty" id="resultCard" aria-live="polite">
+              <div class="result-symbol">⌁</div>
+              <div><strong>Belum ada pencarian</strong><p>Hasil verifikasi akan muncul di sini.</p></div>
+            </div>
+            <div class="recent-heading"><span>Riwayat terakhir</span><button id="clearHistory" class="text-button">Bersihkan</button></div>
+            <div class="recent-list" id="recentList"></div>
+          </div>
+
+          <aside class="actions-panel panel" id="actions">
+            <div class="section-heading"><div><span class="section-kicker">02 / TINDAKAN</span><h2>Operasional</h2></div><span class="action-count">6</span></div>
+            <p class="muted">Pilih tindakan setelah status nopol terverifikasi.</p>
+            <div class="action-list">
+              <button class="action-item" data-action="Reset data nopol" data-tone="green"><span class="action-icon">↺</span><span><strong>Reset data nopol</strong><small>Akun perorangan</small></span><span class="row-arrow">→</span></button>
+              <button class="action-item" data-action="Reset data nopol" data-tone="green"><span class="action-icon">↺</span><span><strong>Reset data nopol</strong><small>Akun perusahaan</small></span><span class="row-arrow">→</span></button>
+              <button class="action-item" data-action="Buka blokir permanen" data-tone="amber"><span class="action-icon">⌁</span><span><strong>Buka blokir permanen</strong><small>Aktifkan kembali nopol</small></span><span class="row-arrow">→</span></button>
+              <button class="action-item" data-action="Blokir permanen nopol" data-tone="red"><span class="action-icon">⌁</span><span><strong>Blokir permanen nopol</strong><small>Hentikan akses subsidi</small></span><span class="row-arrow">→</span></button>
+              <button class="action-item" data-action="Hapus akun perorangan" data-tone="red"><span class="action-icon">⌫</span><span><strong>Hapus akun perorangan</strong><small>Perlu konfirmasi berlapis</small></span><span class="row-arrow">→</span></button>
+              <button class="action-item" data-action="Hapus akun perusahaan" data-tone="red"><span class="action-icon">⌫</span><span><strong>Hapus akun perusahaan</strong><small>Perlu konfirmasi berlapis</small></span><span class="row-arrow">→</span></button>
+            </div>
+          </aside>
+        </section>
+
+        <section class="activity-section" id="activity">
+          <div class="activity-title"><div><span class="section-kicker">03 / MONITORING</span><h2>Aktivitas sesi ini</h2></div><span class="session-label">LOCAL SESSION</span></div>
+          <div class="activity-table"><div class="table-head"><span>WAKTU</span><span>AKTIVITAS</span><span>OBJEK</span><span>STATUS</span></div><div id="activityList"><div class="activity-empty">Belum ada aktivitas dalam sesi ini.</div></div></div>
+        </section>
+        <footer><span>SiSablengSenior Ops v0.1</span><span>Frontend prototype · API</span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="alert"></div>
+    <script>
+      (() => {
+        const $ = (s) => document.querySelector(s);
+        const toast = (message) => { const el = $('#toast'); el.textContent = message; el.classList.add('show'); clearTimeout(window.__toastTimer); window.__toastTimer = setTimeout(() => el.classList.remove('show'), 2800); };
+        const now = new Date();
+        $('#todayLabel').textContent = now.toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase().replaceAll('.','');
+        $('.notice-close').addEventListener('click', () => $('.notice').classList.add('hidden'));
+        $('#refreshConnection').addEventListener('click', () => toast('Mode demo aktif — koneksi API belum terhubung.'));
+        const history = []; const activities = [];
+        function renderHistory(){ $('#recentList').innerHTML = history.length ? history.slice(0,5).map(x=>`<div class="recent-item"><strong>${x.plate}</strong><span>${x.time}</span></div>`).join('') : '<div class="activity-empty">Belum ada pencarian.</div>'; }
+        function addActivity(action, object, status='DEMO'){ activities.unshift({time:new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}),action,object,status}); $('#activityList').innerHTML=activities.slice(0,8).map(a=>`<div class="activity-row"><span>${a.time}</span><span>${a.action}</span><span>${a.object}</span><span><b class="status-tag">${a.status}</b></span></div>`).join(''); }
+        $('#plateForm').addEventListener('submit', e => { e.preventDefault(); const plate=$('#plateInput').value.trim().toUpperCase().replace(/\s+/g,' '); if(!plate)return; const time=new Date().toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}); history.unshift({plate,time}); renderHistory(); $('#resultCard').classList.remove('empty'); $('#resultCard').innerHTML='<div class="result-symbol">!</div><div><strong>Simulasi verifikasi: '+plate.replaceAll('&','&amp;').replaceAll('<','&lt;')+'</strong><p>Data status asli tidak tersedia. Backend resmi belum terhubung; tidak ada data kendaraan yang diperiksa.</p></div>'; addActivity('Simulasi verifikasi nopol',plate); toast('Simulasi selesai — tidak ada sistem eksternal yang dihubungi.'); });
+        $('#clearHistory').addEventListener('click',()=>{history.length=0;renderHistory();toast('Riwayat lokal dibersihkan.');});
+        document.querySelectorAll('.action-item').forEach(btn=>btn.addEventListener('click',()=>{const action=btn.dataset.action; const plate=$('#plateInput').value.trim().toUpperCase()||'Belum ada nopol'; if(!$('#plateInput').value.trim()){toast('Masukkan nomor polisi terlebih dahulu.');$('#plateInput').focus();return;} addActivity('Simulasi: '+action,plate);toast('Mode demo: tindakan tidak dijalankan ke akun atau sistem nyata.');}));
+        renderHistory();
+      })();
+    </script>
+  </body>
+</html>
